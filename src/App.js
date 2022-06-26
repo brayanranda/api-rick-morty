@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import CharacterList from "./components/CharacterList";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mx-auto w-4/5 py-10">
+      <h1 className="text-center text-3xl font-semibold mb-7">
+        Rick and Morty
+      </h1>
+      <CharacterList />
     </div>
   );
 }
-
-export default App;
